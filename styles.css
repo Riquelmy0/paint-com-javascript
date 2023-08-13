@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: #d8d8d8e1;
+}
+canvas{
+    background-color: white;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+}
+.containner{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.too-box{
+    width: 110px;
+    background-color: white;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    margin-left: 40px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    background-color: red;
+}
+.button-too,
+ .button_size{
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    background: none;
+}
+
+.button-too > span{
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.button-too:hover ,
+ .button_size:hover{
+    background-color: aliceblue;
+}
+
+.input__color{
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background: none;
+    cursor: pointer;
+    padding: 2px 3px;
+}
+
+.input__color::-webkit-color-swatch{
+    border-radius: 50%;
+    border: none;
+}
+
+.button_size {
+    padding: 10px;
+    height: auto;
+}
+
+.button_size > span {
+    width: 100%;
+    background-color: black;
+    border-radius: 100px;
+    display: block;
+
+}
+
+
+.button_size[data-size="5"] > span{
+    height: 5px;
+}
+
+.button_size[data-size="10"] > span{
+    height: 10px;
+
+}
+.button_size[data-size="20"] > span{
+    height: 20px;
+
+}
+.button_size[data-size="30"]> span{
+    height: 30px;
+
+}
+
+.active{
+    background-color: #f2f2f2;
+}
+
+
+@media (max-width: 1050px){
+    .containner{
+        flex-direction: column-reverse;
+    }
+
+    .too-box{
+
+        flex-direction: row;
+        width: 300px;
+
+    }
+
+    .button-size{
+        width: 100px;
+    }
+
+    .box-ferraments{
+        display: flex;
+        width: auto;
+    }
+}
+
+
+
+
